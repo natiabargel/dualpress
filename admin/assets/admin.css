@@ -1,0 +1,520 @@
+/**
+ * WP DB Sync — Admin Styles
+ *
+ * @package DualPress
+ */
+
+/* ------------------------------------------------------------------ */
+/* Layout                                                               */
+/* ------------------------------------------------------------------ */
+
+.dualpress-wrap {
+	max-width: 1200px;
+}
+
+.dualpress-page-title {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.dualpress-logo {
+	font-size: 1.4em;
+	line-height: 1;
+}
+
+.dualpress-tabs {
+	margin-top: 0.5em;
+}
+
+.dualpress-tab-content {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+	padding: 20px 24px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Cards                                                                */
+/* ------------------------------------------------------------------ */
+
+.dualpress-card {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-left: 4px solid #2271b1;
+	border-radius: 3px;
+	padding: 16px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.dualpress-card h2,
+.dualpress-card h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.dualpress-info-card {
+	border-left-color: #72aee6;
+}
+
+.dualpress-warning-inline {
+	margin: 8px 0 0 !important;
+	padding: 6px 12px !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Forms                                                                */
+/* ------------------------------------------------------------------ */
+
+.dualpress-form-table th {
+	width: 200px;
+	padding-left: 0;
+}
+
+.dualpress-toggle-label {
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.dualpress-disabled {
+	opacity: 0.5;
+}
+
+/* Secret key row */
+.dualpress-key-row {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dualpress-key-row .regular-text {
+	flex: 1;
+	min-width: 200px;
+	font-family: monospace;
+	letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Status badges                                                        */
+/* ------------------------------------------------------------------ */
+
+.dualpress-status-badge {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 12px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.dualpress-status-unknown  { background: #f0f0f1; color: #646970; }
+.dualpress-status-ok       { background: #edfaef; color: #1a7f3c; }
+.dualpress-status-error    { background: #fcf0f1; color: #d63638; }
+
+/* Queue / log level badges */
+.dualpress-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	min-width: 32px;
+	text-align: center;
+}
+
+.dualpress-badge-pending    { background: #fff8e5; color: #9a6700; border: 1px solid #f0c33c; }
+.dualpress-badge-processing { background: #e7f0fd; color: #2271b1; border: 1px solid #72aee6; }
+.dualpress-badge-completed  { background: #edfaef; color: #1a7f3c; border: 1px solid #68de7c; }
+.dualpress-badge-failed     { background: #fcf0f1; color: #d63638; border: 1px solid #f86368; }
+
+/* Action badges */
+.dualpress-action-badge {
+	display: inline-block;
+	padding: 1px 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.dualpress-action-insert { background: #edfaef; color: #1a7f3c; }
+.dualpress-action-update { background: #e7f0fd; color: #2271b1; }
+.dualpress-action-delete { background: #fcf0f1; color: #d63638; }
+
+/* Log level badges */
+.dualpress-level-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+.dualpress-level-debug   { background: #f0f0f1; color: #646970; }
+.dualpress-level-info    { background: #edfaef; color: #1a7f3c; }
+.dualpress-level-warning { background: #fff8e5; color: #9a6700; }
+.dualpress-level-error   { background: #fcf0f1; color: #d63638; }
+
+/* ------------------------------------------------------------------ */
+/* Tables                                                               */
+/* ------------------------------------------------------------------ */
+
+.dualpress-table-wrapper {
+	overflow-x: auto;
+}
+
+.dualpress-table {
+	margin-top: 12px;
+	font-size: 13px;
+}
+
+.dualpress-table th,
+.dualpress-table td {
+	padding: 8px 10px;
+	vertical-align: middle;
+}
+
+.dualpress-col-time  { width: 160px; white-space: nowrap; }
+.dualpress-col-level { width: 90px; }
+.dualpress-col-event { width: 160px; }
+.dualpress-col-message { min-width: 300px; }
+
+.dualpress-error-cell { max-width: 240px; }
+.dualpress-error-truncate {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #d63638;
+	font-size: 12px;
+	cursor: help;
+}
+
+.dualpress-log-warning td { background-color: #fffbf0 !important; }
+.dualpress-log-error   td { background-color: #fef0f0 !important; }
+
+/* ------------------------------------------------------------------ */
+/* Stats table                                                          */
+/* ------------------------------------------------------------------ */
+
+.dualpress-stats-table {
+	border-collapse: collapse;
+	margin-bottom: 12px;
+	font-size: 14px;
+	width: 100%;
+}
+
+.dualpress-stats-table td {
+	padding: 5px 8px;
+}
+
+.dualpress-stats-table td:first-child {
+	color: #646970;
+}
+
+.dualpress-row-warning td {
+	color: #d63638;
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Tools grid                                                           */
+/* ------------------------------------------------------------------ */
+
+.dualpress-tools-grid {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) );
+	gap: 20px;
+	padding-top: 12px;
+}
+
+.dualpress-full-width {
+	grid-column: 1 / -1;
+}
+
+.dualpress-queue-actions {
+	display: flex;
+	gap: 8px;
+	margin-top: 12px;
+	flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Logs toolbar                                                         */
+/* ------------------------------------------------------------------ */
+
+.dualpress-logs-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 16px;
+	padding-top: 4px;
+}
+
+.dualpress-logs-filters {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.dualpress-logs-pagination {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+	font-size: 13px;
+	color: #646970;
+}
+
+.dualpress-pagination-buttons {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+#dualpress-logs-page-indicator {
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Inline messages                                                      */
+/* ------------------------------------------------------------------ */
+
+.dualpress-inline-msg {
+	margin-left: 10px;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+.dualpress-inline-msg.is-success { color: #1a7f3c; }
+.dualpress-inline-msg.is-error   { color: #d63638; }
+.dualpress-inline-msg.is-loading { color: #646970; }
+
+/* ------------------------------------------------------------------ */
+/* my.cnf card                                                          */
+/* ------------------------------------------------------------------ */
+
+.dualpress-mycnf-card {
+	margin-top: 30px;
+	border-left-color: #f0c33c;
+}
+
+.dualpress-code {
+	background: #1e1e1e;
+	color: #d4d4d4;
+	padding: 14px 18px;
+	border-radius: 4px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 13px;
+	overflow-x: auto;
+	margin: 12px 0;
+	line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------ */
+/* Notifications                                                        */
+/* ------------------------------------------------------------------ */
+
+.dualpress-notification-event {
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.dualpress-notification-event:last-child {
+	border-bottom: none;
+}
+
+.dualpress-notification-event label {
+	font-size: 14px;
+}
+
+.dualpress-notification-event .description {
+	margin-top: 3px;
+	margin-left: 22px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Log context details                                                  */
+/* ------------------------------------------------------------------ */
+
+.dualpress-log-context {
+	margin-top: 4px;
+}
+
+.dualpress-log-context summary {
+	cursor: pointer;
+	font-size: 12px;
+	color: #646970;
+}
+
+.dualpress-log-context pre {
+	background: #f6f7f7;
+	padding: 8px;
+	font-size: 11px;
+	max-height: 200px;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-break: break-word;
+	margin-top: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Misc                                                                 */
+/* ------------------------------------------------------------------ */
+
+.dualpress-empty {
+	color: #646970;
+	font-style: italic;
+	padding: 20px 0;
+}
+
+.dualpress-table-count {
+	font-size: 12px;
+	color: #646970;
+	margin-top: 8px;
+}
+
+.dualpress-text-success { color: #1a7f3c; }
+
+.dualpress-excluded-list {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.dualpress-excluded-list li {
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Connection status dots                                               */
+/* ------------------------------------------------------------------ */
+
+.dualpress-status-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 6px;
+	vertical-align: middle;
+	font-style: normal;
+	font-size: 10px;
+	line-height: 1;
+}
+
+.dualpress-dot-ok      { color: #1a7f3c; }
+.dualpress-dot-error   { color: #d63638; }
+.dualpress-dot-unknown { color: #646970; }
+
+/* ------------------------------------------------------------------ */
+/* Server A/B tags in sync mode labels                                 */
+/* ------------------------------------------------------------------ */
+
+.dualpress-server-tags {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin: 0 6px;
+}
+
+.dualpress-server-tag {
+	display: inline-block;
+	padding: 1px 7px;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: 600;
+	background: #e7f0fd;
+	color: #2271b1;
+	border: 1px solid #72aee6;
+}
+
+/* ------------------------------------------------------------------ */
+/* Sync direction diagram                                               */
+/* ------------------------------------------------------------------ */
+
+.dualpress-direction-card {
+	border-left-color: #2271b1;
+}
+
+.dualpress-diagram {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	padding: 16px 0 8px;
+}
+
+.dualpress-server-node {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	background: #f0f6fc;
+	border: 2px solid #72aee6;
+	border-radius: 8px;
+	padding: 12px 20px;
+	min-width: 120px;
+	text-align: center;
+}
+
+.dualpress-server-label {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.dualpress-server-role-badge {
+	font-size: 11px;
+	color: #646970;
+}
+
+.dualpress-arrows-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	font-size: 13px;
+	color: #2271b1;
+}
+
+.dualpress-arrow {
+	font-size: 28px;
+	line-height: 1;
+	color: #2271b1;
+}
+
+.dualpress-mode-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+/* Spinner shown on AJAX buttons */
+.dualpress-spinning::after {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 2px solid currentColor;
+	border-top-color: transparent;
+	border-radius: 50%;
+	animation: dualpress-spin 0.7s linear infinite;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+
+@keyframes dualpress-spin {
+	to { transform: rotate(360deg); }
+}
