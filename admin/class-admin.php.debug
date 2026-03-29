@@ -1,0 +1,6 @@
+// Debug: Add this temporarily to see actual hook
+add_action('admin_enqueue_scripts', function($hook) {
+    if (strpos($hook, 'dualpress') !== false || strpos($hook, 'toplevel') !== false) {
+        error_log("DualPress hook: " . $hook);
+    }
+}, 1);
